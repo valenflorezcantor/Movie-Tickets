@@ -1,10 +1,8 @@
 import React from 'react'
-import ReactDOM from 'react-dom/client'
-import App from './App.jsx'
-import './index.css'
+import ReactDOM from 'react-dom'
+import Boletos from './pages/Tickets'
 
-ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-)
+const container = document.getElementById('root')
+
+// ReactDOM.render(__que,__donde)
+ReactDOM.render(<Boletos />, container)
