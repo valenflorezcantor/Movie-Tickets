@@ -5,16 +5,14 @@ const Details = () => {
     const [movieDetails, setMovieDetails] = useState(null);
 
     useEffect(() => {
-        // Realiza la solicitud GET a la base de datos
         Axios.get('http://localhost:3000/peliculas/1')
             .then(response => {
-                // Almacena los detalles de la película en el estado
                 setMovieDetails(response.data);
             })
             .catch(error => {
                 console.error('Error fetching movie details:', error);
             });
-    }, []); // Se ejecuta solo una vez al montar el componente
+    }, []);
 
     return (
         <section className='ml-10 mt-20'>
