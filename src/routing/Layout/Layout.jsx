@@ -3,11 +3,11 @@ import { Outlet } from 'react-router-dom';
 import Header from '../../components/commons/Header';
 import Carousel from '../../components/commons/Carousel';
 
-const Layout = () => {
+const Layout = ({movies=[]}) => {
   return (
       <>
           <Header />
-          <Carousel />
+      <Carousel movies={movies } />
           <Outlet/>
       </>
   )
