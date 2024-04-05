@@ -26,7 +26,7 @@ const Details = () => {
                             <p className='font-bold text-lg'>{movieDetails.nombre}</p>
                         </article>
                         <article className='mb-6'>
-                            <p className='font-bold text-lg'>{movieDetails.publico}</p>
+                            <p className='font-bold text-lg'>{movieDetails.nombre}</p>
                         </article>
                         <article className='flex'>
                             <p className='py-1 mr-1 px-2 bg-movie-class-bg-color text-white font-bold rounded-lg'>{movieDetails.publico}</p>
