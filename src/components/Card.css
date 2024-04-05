@@ -1,0 +1,26 @@
+.card-container {
+    width: 25%; /* Para mostrar 4 imágenes por fila */
+    float: left;
+    padding:    15px;
+    box-sizing: border-box;
+}
+
+.card-image {
+    width: 100%;
+    overflow: hidden;
+    
+}
+
+.card-image img {
+    width: 70%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.card-container h4{
+    color: black;
+    text-align: center;
+    margin-top: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}

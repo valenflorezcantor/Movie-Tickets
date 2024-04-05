@@ -4,13 +4,14 @@ import Layout from "./routing/Layout/Layout";
 
 import { useEffect, useState } from "react";
 import { getAllMovies } from "./services/movieServices";
-import Card from './components/Card';
+import Card from "./components/Card";
+import Home from "./pages/Home";
 
 function App() {
   const [movies, setMovies] = useState([]);
   useEffect(() => {
     getAllMovies().then((response) => {
-      // console.log(response);
+      console.log(response);
       setMovies(response);
     });
   }, []);
@@ -18,9 +19,8 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route element={<Layout movies={movies} />}>
-          <Route path="/" element={<Home movies={movies} />} />
-          <Route exact path="./Card" component={Card} /> {'components\Card'}
+        <Route path="/" element={<Layout movies={movies} />}>
+          <Route index element={<Home movies={movies} />} />
           {/* <Route path="/genre/:genre" element={<Genre />} />
         <Route path="*" element={<NotFound />} /> */}
         </Route>
@@ -29,15 +29,6 @@ function App() {
   );
 }
 
-const Home = ({ movies = [] }) => {
-  useEffect(() => {
-    console.log("Vemos movies desde el componente Home", movies);
-  }, [movies]);
-  return (
-    <div>
-      <h1>Home</h1>
-    </div>
-  );
-};
+
 
 export default App;
