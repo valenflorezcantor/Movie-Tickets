@@ -1,0 +1,73 @@
+{
+    "peliculas": [
+      {
+        "id": 1,
+        "nombre": "Titanic",
+        "urlImagen": "https://musicart.xboxlive.com/7/5c255e00-0000-0000-0000-000000000002/504/image.jpg",
+        "urlTrailerImagen" : "https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/media/image/2021/12/sonic-2-2568845.jpg",
+        "descripcion": "Una historia de amor en el trasatlántico más grande del mundo.",
+        "generos": "Romance",
+        "duracion": 195,
+        "publico": "B",
+        "horarios": [
+          {
+            "id": 1,
+            "hora": "18:00",
+            "sala": {
+              "id": 1,
+              "nombreSala": "Sala 1",
+              "filas": [
+                {
+                  "id": 1,
+                  "nombre": "Fila A",
+                  "asientos": [
+                    {"id": 1, "numeroAsiento": 1, "ocupado": false},
+                    {"id": 2, "numeroAsiento": 2, "ocupado": true},
+                    {"id": 3, "numeroAsiento": 3, "ocupado": false}
+                  ]
+                },
+                {
+                  "id": 2,
+                  "nombre": "Fila B",
+                  "asientos": [
+                    {"id": 4, "numeroAsiento": 1, "ocupado": false},
+                    {"id": 5, "numeroAsiento": 2, "ocupado": false},
+                    {"id": 6, "numeroAsiento": 3, "ocupado": true}
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "id": 2,
+            "hora": "19:00",
+            "sala": {
+              "id": 2,
+              "nombreSala": "Sala 2",
+              "filas": [
+                {
+                  "id": 1,
+                  "nombre": "Fila A",
+                  "asientos": [
+                    {"id": 1, "numeroAsiento": 1, "ocupado": false},
+                    {"id": 2, "numeroAsiento": 2, "ocupado": true},
+                    {"id": 3, "numeroAsiento": 3, "ocupado": false}
+                  ]
+                },
+                {
+                  "id": 2,
+                  "nombre": "Fila B",
+                  "asientos": [
+                    {"id": 4, "numeroAsiento": 1, "ocupado": false},
+                    {"id": 5, "numeroAsiento": 2, "ocupado": false},
+                    {"id": 6, "numeroAsiento": 3, "ocupado": true}
+                  ]
+                }
+              ]
+            }
+          }
+          
+        ]
+      }
+    ]
+  }

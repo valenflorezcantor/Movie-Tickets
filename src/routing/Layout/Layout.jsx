@@ -2,13 +2,16 @@ import React from 'react'
 import { Outlet } from 'react-router-dom';
 import Header from '../../components/commons/Header';
 import Carousel from '../../components/commons/Carousel';
+import Details from '../../pages/Details';
 
-const Layout = ({movies=[]}) => {
+const Layout = () => {
   return (
       <>
           <Header />
-      <Carousel movies={movies } />
+          <Carousel />
           <Outlet/>
+          <Details />
+
       </>
   )
 }
