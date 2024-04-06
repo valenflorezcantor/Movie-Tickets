@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-import BASE_URL from "../services/Endpoint";
+// import BASE_URL from "../services/Endpoint";
 import { yellowChair, blueChair, redChair } from "../services/Helpers";
 
 const SeatSelection = ({ cantidadAsientos = 3 }) => {
@@ -12,7 +12,7 @@ const SeatSelection = ({ cantidadAsientos = 3 }) => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get(`${BASE_URL}`);
+        const response = await axios.get(`http://localhost:3000/Peliculas/1`);
         const sala = response.data.horarios[0].sala;
         const allAsientos = sala.filas.flatMap((fila) =>
           fila.asientos.map((asiento) => ({ ...asiento, seleccionable: true }))

@@ -1,3 +1,3 @@
-const BASE_URL = "http://localhost:3000/Peliculas/1";
+// const BASE_URL = "http://localhost:3000/Peliculas/1";
 
-export default BASE_URL;
+// export default BASE_URL;
